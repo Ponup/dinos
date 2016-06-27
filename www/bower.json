@@ -1,0 +1,31 @@
+{
+  "name": "Ponup Dinos",
+  "authors": [
+    "dinos@ponup.com"
+  ],
+  "description": "Ponup Dinos is a simple memory game for kids",
+  "main": "index.html",
+  "keywords": [
+    "ponup",
+    "dinos",
+    "game",
+    "memory",
+    "kids",
+    "children",
+    "dinosaur"
+  ],
+  "license": "MIT",
+  "homepage": "http://ponup.om",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.2.0",
+    "underscore": "^1.8.3"
+  }
+}
