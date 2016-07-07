@@ -1,0 +1,81 @@
+@import "../bower_components/normalize-css/normalize.css";
+@import "../bower_components/material-color/material-color.scss";
+html, body {
+  height: 100%;
+}
+body{
+  background-color: $clr-pink;
+}
+h1 {
+  text-align: center;
+  color: $clr-yellow;
+  display: none;
+}
+
+div#board {
+  height:100%;
+      -webkit-perspective: 800px;
+         -moz-perspective: 800px;
+           -o-perspective: 800px;
+              perspective: 800px;
+}
+
+section {
+    width: 50%;
+    height: 25%;
+    position: relative;
+    float: left;
+}
+
+div.Item {
+    box-shadow: 0px 3px 0px $clr-pink-700;
+    width: 92%;
+    border-radius: 5px;
+    height: 90%;
+    margin:auto;
+    background-color: $clr-pink-300;
+    position: absolute;
+    top:0;bottom:0; left: 0; right: 0;
+
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition: -moz-transform 1s;
+       -o-transition: -o-transform 1s;
+          transition: transform 1s;
+
+}
+
+div.Item.Flipped {
+  -webkit-transform: rotateY( 180deg );
+     -moz-transform: rotateY( 180deg );
+       -o-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+
+div.Item .Side {
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+}
+
+
+div.Item img {
+}
+
+div.Item div {
+    border-radius: 5px;
+    background-color: $clr-cyan;
+  -webkit-transform: rotateY( 180deg );
+     -moz-transform: rotateY( 180deg );
+       -o-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+

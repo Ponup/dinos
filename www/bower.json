@@ -26,6 +26,8 @@
   ],
   "dependencies": {
     "requirejs": "^2.2.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "normalize-css": "normalize.css#^4.2.0",
+    "material-color": "^2.2.1"
   }
 }
