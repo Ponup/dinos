@@ -28,10 +28,16 @@ div#board {
 }
 
 section {
-	width: 50%;
-	height: 25%;
 	position: relative;
 	float: left;
+	// 2x4 in portait
+	width: 50%;
+	height: 25%;
+	// and 4x2 in landscape
+	@media (orientation: landscape) {
+		height: 50%;
+		width: 25%;
+	}
 }
 
 div.Item {

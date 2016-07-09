@@ -27,10 +27,14 @@ div#board {
   perspective: 800px; }
 
 section {
-  width: 50%;
-  height: 25%;
   position: relative;
-  float: left; }
+  float: left;
+  width: 50%;
+  height: 25%; }
+  @media (orientation: landscape) {
+    section {
+      height: 50%;
+      width: 25%; } }
 
 div.Item {
   width: 92%;
