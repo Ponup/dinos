@@ -37,22 +37,22 @@ section {
       width: 25%; } }
 
 div.Item {
-  width: 92%;
+  width: 90%;
   height: 90%;
   margin: auto;
   background-color: #fff;
-  -webkit-box-shadow: 0px 3px 0px #f9a825;
-  -khtml-box-shadow: 0px 3px 0px #f9a825;
-  -moz-box-shadow: 0px 3px 0px #f9a825;
-  -ms-box-shadow: 0px 3px 0px #f9a825;
-  -o-box-shadow: 0px 3px 0px #f9a825;
-  box-shadow: 0px 3px 0px #f9a825;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 10px #f9a825;
+  -khtml-box-shadow: 0px 3px 10px #f9a825;
+  -moz-box-shadow: 0px 3px 10px #f9a825;
+  -ms-box-shadow: 0px 3px 10px #f9a825;
+  -o-box-shadow: 0px 3px 10px #f9a825;
+  box-shadow: 0px 3px 10px #f9a825;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   position: absolute;
   top: 0;
   right: 0;
@@ -93,17 +93,30 @@ div.Item .Side {
 
 div.Item div {
   background-color: #f50057;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   -webkit-transform: rotateY(180deg);
   -khtml-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
+
+div.Item div::after {
+  content: "";
+  background-image: url("../img/body_bg.png");
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 /*# sourceMappingURL=index.css.map */

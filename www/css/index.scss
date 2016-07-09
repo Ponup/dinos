@@ -41,12 +41,12 @@ section {
 }
 
 div.Item {
-	width: 92%;
+	width: 90%;
 	height: 90%;
 	margin:auto;
 	background-color: $clr-white;
-	@include box-shadow(0px 3px 0px $clr-yellow-800);
-	@include border-radius(5px);
+	@include box-shadow(0px 3px 10px $clr-yellow-800);
+	@include border-radius(10px);
 	@include position(absolute, 0,0,0,0);
 	@include transform-style(preserve-3d);
 	@include transition(transform 1s);
@@ -55,7 +55,6 @@ div.Item {
 div.Item.Flipped {
 	@include transform(rotateY( 180deg ))
 }
-
 div.Item .Side {
 	height: 100%;
 	width: 100%;
@@ -66,6 +65,19 @@ div.Item .Side {
 
 div.Item div {
 	background-color: $clr-pink-a400;
-	@include border-radius(5px);
+	@include border-radius(10px);
 	@include transform(rotateY( 180deg ))
+}
+div.Item div::after {
+  content: "";
+  background-image: url('../img/body_bg.png');
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
