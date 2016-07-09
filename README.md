@@ -1,20 +1,21 @@
 # Instrucciones para ejecutar:
 
- + clonar repositorio 
+ 1. clonar repositorio 
 
-	> git clone http://github.com/ponup/dinos.git 
+	```git clone http://github.com/ponup/dinos.git```
 
- + Instalar apache cordova globalmente
+ 2. Instalar apache cordova globalmente
+	
+	```sudo npm install -g cordova```
 
-	> sudo npm install -g cordova
+ 3. Instalar dependencias de bower
 
- + Instalar dependencias de bower
+	```cd dinos/www```
+	
+	```bower install```
 
-	> cd dinos/www
-	> bower install
+ 4. Correr cordova
 
- + Correr cordova
-
-	> cordova serve browser
+	```cordova serve browser```
 
 
