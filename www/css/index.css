@@ -1,9 +1,16 @@
 @import url(../bower_components/normalize-css/normalize.css);
+@import url(kirifont.css);
 html, body {
   height: 100%; }
 
 body {
-  background-color: #e91e63; }
+  background-color: #ffeb3b;
+  background-image: url("../img/body_bg.png");
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  font-family: "Kirifont";
+  color: #fff; }
 
 h1 {
   text-align: center;
@@ -13,7 +20,9 @@ h1 {
 div#board {
   height: 100%;
   -webkit-perspective: 800px;
+  -khtml-perspective: 800px;
   -moz-perspective: 800px;
+  -ms-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px; }
 
@@ -24,47 +33,72 @@ section {
   float: left; }
 
 div.Item {
-  box-shadow: 0px 3px 0px #c2185b;
   width: 92%;
-  border-radius: 5px;
   height: 90%;
   margin: auto;
-  background-color: #f06292;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 0px #f9a825;
+  -khtml-box-shadow: 0px 3px 0px #f9a825;
+  -moz-box-shadow: 0px 3px 0px #f9a825;
+  -ms-box-shadow: 0px 3px 0px #f9a825;
+  -o-box-shadow: 0px 3px 0px #f9a825;
+  box-shadow: 0px 3px 0px #f9a825;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   -webkit-transform-style: preserve-3d;
+  -khtml-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 1s;
-  -moz-transition: -moz-transform 1s;
-  -o-transition: -o-transform 1s;
+  -webkit-transition: transform 1s;
+  -khtml-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s; }
 
 div.Item.Flipped {
   -webkit-transform: rotateY(180deg);
+  -khtml-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
 div.Item .Side {
-  display: block;
   height: 100%;
   width: 100%;
   position: absolute;
+  left: 0;
   -webkit-backface-visibility: hidden;
+  -khtml-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 div.Item div {
+  background-color: #f50057;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
-  background-color: #00bcd4;
   -webkit-transform: rotateY(180deg);
+  -khtml-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
