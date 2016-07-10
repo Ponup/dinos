@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "KiriFont";
-	src: url("./KiriFont.eot");
-	src: url("./KiriFont.eot?#iefix") format("embedded-opentype"),
-	url("./KiriFont.woff") format("woff"),
-	url("./KiriFont.ttf") format("truetype"),
-	url("./KiriFont.svg#KiriFont") format("svg");
+	src: url("../fonts/KiriFont.eot");
+	src: url("../fonts/KiriFont.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/KiriFont.woff") format("woff"),
+	url("../fonts/KiriFont.ttf") format("truetype"),
+	url("../fonts/KiriFont.svg#KiriFont") format("svg");
 	font-weight: normal;
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
