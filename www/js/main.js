@@ -17,6 +17,7 @@ var app = {
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('touchmove', function(ev) { ev.preventDefault(); }, false);
     },
     onDeviceReady: function() {
         app.basePath = ( 'android' === device.platform.toLowerCase() ? '/android_asset/www/' : '' );

@@ -1,5 +1,16 @@
 define(function(require) {
 
+    if(AdMob) {
+        var config = require('config');
+
+        AdMob.createBanner({
+            adId: config.admobAdId,
+            position: AdMob.AD_POSITION.TOP_CENTER,
+            autoShow: true,
+            isTesting: false 
+        });
+    }
+
     var itemPaths = [
         'dino_long-small.png',
         'dino_rex-small.png',

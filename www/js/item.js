@@ -22,6 +22,7 @@ define(function(require) {
 
         this.back = document.createElement('div');
         this.back.className = 'Side';
+        this.back.innerHTML = '?';
         this.item.appendChild(this.back);
         
         this.section.appendChild(this.item);
