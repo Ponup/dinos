@@ -87,3 +87,29 @@ div.Item div {
           transform: rotateY( 180deg );
 }
 
+div#overlay {
+    background-color: #514;
+    opacity: 0.6;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+div#overlay > button {
+    margin: 0px auto;
+    display: block;
+    padding: 10px;
+    border-radius: 30px;
+    border: 10px solid white;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 130px; font-size: 10vw;
+    color: white;
+    background-color: #924;
+    opacity: 1;
+}
+
