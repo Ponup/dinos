@@ -1,0 +1,83 @@
+@import "../bower_components/normalize-css/normalize.css";
+@import "../bower_components/material-color/material-color.scss";
+@import "mixins.scss";
+@import "kirifont.css";
+
+html, body {
+	height: 100%;
+}
+body{
+	background-color: $clr-yellow-500;
+	background-image: url('../img/body_bg.png');
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	font-family: "Kirifont";
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+	color: $clr-yellow;
+	display: none;
+}
+
+div#board {
+	height:100%;
+	@include perspective(800px);
+}
+
+section {
+	position: relative;
+	float: left;
+	// 2x4 in portait
+	width: 50%;
+	height: 25%;
+	// and 4x2 in landscape
+	@media (orientation: landscape) {
+		height: 50%;
+		width: 25%;
+	}
+}
+
+div.Item {
+	width: 90%;
+	height: 90%;
+	margin:auto;
+	background-color: $clr-white;
+	@include box-shadow(0px 3px 10px $clr-yellow-800);
+	@include border-radius(10px);
+	@include position(absolute, 0,0,0,0);
+	@include transform-style(preserve-3d);
+	@include transition(transform 1s);
+}
+
+div.Item.Flipped {
+	@include transform(rotateY( 180deg ))
+}
+div.Item .Side {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	@include backface-visibility(hidden);
+}
+
+div.Item div {
+	background-color: $clr-pink-a400;
+	@include border-radius(10px);
+	@include transform(rotateY( 180deg ))
+}
+div.Item div::after {
+  content: "";
+  background-image: url('../img/body_bg.png');
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
